@@ -222,3 +222,34 @@ addNumber(10,20,30,40,50)
 '''
 unpacking argument
 '''
+def healthCalculator(age, appleAte, cigSmoked):
+    print((100 - age) + (appleAte * 3.5) - (cigSmoked * 2))
+
+pratyush = [22, 20, 10]
+
+healthCalculator(pratyush[0],pratyush[1],pratyush[2])
+healthCalculator(*pratyush)
+
+
+'''
+multiple elements with same name and filter
+'''
+groceries = {'milk','wheat','rice','beer','pulse','beer'}
+print(groceries)
+
+if 'pulse' in groceries:
+    print('you have pulse')
+else:
+    print('add pulse')
+
+
+'''
+Dictionary
+'''
+classmates = {'Tony':'cool but smells','emma': 'sits behind me','lucy':'is hot'}
+
+print(classmates)
+print(classmates['emma'])
+
+for k,v in classmates.items():
+    print(k," : ",v)
